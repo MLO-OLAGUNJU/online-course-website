@@ -44,7 +44,7 @@ const MainWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 30px;
+  padding-top: 10px;
 `;
 
 const NavWrapper = styled.div`
@@ -53,7 +53,7 @@ const NavWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 10px 0;
-  width: 73%;
+  width: 85%;
   @media (max-width: 768px) {
     padding-top: 20px;
   }

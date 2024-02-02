@@ -2,76 +2,108 @@ import React from "react";
 import styled from "styled-components";
 import heroOneGirl from "../images/heroOneGirl.svg";
 import mappedUsers from "../images/mappedUsers-8c4d447b.svg";
+import zoomlogo from "../images/zoom-ba3b3c3d.svg";
+import stripelogo from "../images/stripe-5009e4c8.svg";
+import mondaylogo from "../images/monday-24c35f7f.svg";
+import dropboxlogo from "../images/dropbox-d7692600.svg";
+import slacklogo from "../images/slack-11024e07.svg";
+import { GoArrowUpRight } from "react-icons/go";
 
 const Header = () => {
   return (
     <>
-      <MainCarrier>
-        <Main>
-          <Side>
-            <h1>Grow your skills to advance your career path</h1>
-            <p>
-              Build Your Future With Our Quality Education. The Best And Largest
-              All-In-One Online Tutoring Platform In The World
-            </p>
+      <Wrapper>
+        <MainCarrier>
+          <Main>
+            <Side>
+              <h1>
+                Grow your skills <br /> to advance your career path
+              </h1>
+              <p>
+                Build Your Future With Our Quality Education. The Best And
+                Largest All-In-One Online Tutoring Platform In The World
+              </p>
 
-            <Flex>
-              <button>Get Started Now</button>
-              <button>Enroll Now</button>
-            </Flex>
+              <Flex>
+                <button>
+                  Get Started Now{" "}
+                  <GoArrowUpRight style={{ width: "25px", height: "25px" }} />
+                </button>
+                <button>Enroll Now</button>
+              </Flex>
 
-            <Flex>
-              <div>
-                <img
-                  src={mappedUsers}
-                  alt="Headshot pictures of various student stacked together"
-                />
-              </div>
-              <div>
-                <h3>255+</h3>
-                <p>Previews</p>
-              </div>
-            </Flex>
-          </Side>
-          <Aside>
-            <img src={heroOneGirl} alt="girl in computer" />
-          </Aside>
-        </Main>
-      </MainCarrier>
+              <Flex>
+                <div>
+                  <img
+                    src={mappedUsers}
+                    alt="Headshot pictures of various student stacked together"
+                  />
+                </div>
+                <div>
+                  <h3>255+</h3>
+                  <p>Previews</p>
+                </div>
+              </Flex>
+            </Side>
+            <Aside>
+              <img src={heroOneGirl} alt="girl in computer" />
+            </Aside>
+          </Main>
+          <RowMarque>
+            <img src={zoomlogo} alt="zoom logo" />
+            <img src={stripelogo} alt="stripe logo" />
+            <img src={mondaylogo} alt="moday.com logo" />
+            <img src={dropboxlogo} alt="dropbox logo" />
+            <img src={slacklogo} alt="slack logo" />
+          </RowMarque>
+        </MainCarrier>
+      </Wrapper>
     </>
   );
 };
 
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  background-color: #004db3;
+  padding-top: 100px;
+`;
 const MainCarrier = styled.main`
   display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #004db3;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */ */
 `;
 const Main = styled.main`
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding-top: 140px;
-
-  width: 73%;
+  grid-template-columns: 1fr 1.5fr;
+  /* padding: 0 80px; */
+  padding-top: 8px;
+  padding-left: 120px;
 `;
 const Side = styled.div`
   display: flex;
   flex-direction: column;
 
   & > h1 {
-    font-size: 64px;
+    font-size: 50px;
     color: aliceblue;
-    margin-top: 169px;
+    margin-top: 110px;
   }
   & > p {
     color: aliceblue;
     margin-top: 5px;
     max-width: 560px;
     margin-bottom: 40px;
+    font-size: 13px;
+    font-weight: 600;
   }
 `;
-const Aside = styled.div``;
+const Aside = styled.div`
+  img {
+    width: 600px;
+  }
+`;
 const Flex = styled.div`
   display: flex;
   gap: 15px;
@@ -93,7 +125,22 @@ const Flex = styled.div`
     color: aliceblue;
     margin-bottom: 20px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:nth-child(2) {
+      background-color: #fff;
+      color: #004db3;
+      font-weight: 600;
+    }
   }
 `;
+const RowMarque = styled.div`
+  background: rgb(255, 255, 255, 0.5);
 
+  padding: 40px 80px;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+`;
 export default Header;

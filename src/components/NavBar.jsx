@@ -48,7 +48,7 @@ const MainWrapper = styled.div`
   left: 0;
   right: 0;
   position: fixed;
-  z-index: 0;
+  z-index: 9999999;
   @media (max-width: 768px) {
     position: unset;
   }
@@ -93,6 +93,9 @@ const ListItem = styled.li`
   color: wheat;
   cursor: pointer;
   &:hover {
+    color: aliceblue;
+  }
+  &:focus {
     color: #fff;
   }
   &:last-child {

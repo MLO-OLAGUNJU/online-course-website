@@ -12,6 +12,10 @@ body {
   position: relative;
   background-color: aliceblue;
 }
+
+h1 {
+  font-style: 55px;
+}
 /* .Aside {
   background-image: url("../src/images/heroOneGirl.svg");
   background-size: contain; /* You can use 'contain' if you want the image to fit within the div 

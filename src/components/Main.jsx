@@ -71,7 +71,7 @@ const CourseHighlight = styled.div`
         margin: auto auto;
       }
       h1 {
-        font-size: 35px;
+        /* font-size: 35px; */
         @media (max-width: 768px) {
           font-size: 25px;
           text-align: center;

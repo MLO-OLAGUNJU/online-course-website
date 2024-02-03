@@ -45,7 +45,6 @@ const MainWrapper = styled.div`
   align-items: center;
   justify-content: center;
   padding-top: 10px;
-  /* position: fixed; */
   left: 0;
   right: 0;
 `;
@@ -66,6 +65,8 @@ const Nav = styled.ul`
   align-items: center;
   justify-content: space-between;
   gap: 40px;
+  position: fixed;
+
   transition: opacity 0.3s ease, height 0.3s ease; /* Add smooth transition effect */
 
   @media (max-width: 768px) {
@@ -73,12 +74,13 @@ const Nav = styled.ul`
     flex-direction: column;
     position: absolute;
     background-color: #004db3;
-    height: 50vh;
-    width: 100vw;
-    top: 70px;
+    height: 100%;
+    width: 100%;
+    top: 84px;
     right: 0;
     justify-content: center;
     text-align: center;
+    overflow-y: hidden;
     gap: 15px;
     z-index: 9000; /* Ensure the menu is above other elements */
   }

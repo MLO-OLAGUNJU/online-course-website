@@ -2,11 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import heroOneGirl from "../images/heroOneGirl.svg";
 import mappedUsers from "../images/mappedUsers-8c4d447b.svg";
-import zoomlogo from "../images/zoom-ba3b3c3d.svg";
-import stripelogo from "../images/stripe-5009e4c8.svg";
-import mondaylogo from "../images/monday-24c35f7f.svg";
-import dropboxlogo from "../images/dropbox-d7692600.svg";
-import slacklogo from "../images/slack-11024e07.svg";
 import { GoArrowUpRight } from "react-icons/go";
 
 const Header = () => {
@@ -47,13 +42,6 @@ const Header = () => {
               <img src={heroOneGirl} alt="girl in computer" />
             </Aside>
           </Main>
-          <RowMarque>
-            <img src={zoomlogo} alt="zoom logo" />
-            <img src={stripelogo} alt="stripe logo" />
-            <img src={mondaylogo} alt="moday.com logo" />
-            <img src={dropboxlogo} alt="dropbox logo" />
-            <img src={slacklogo} alt="slack logo" />
-          </RowMarque>
         </MainCarrier>
       </Wrapper>
     </>
@@ -117,6 +105,8 @@ const Aside = styled.div`
     width: 600px;
     @media (max-width: 768px) {
       width: 300px;
+      margin-top: 20px;
+      height: 100%;
     }
   }
 `;
@@ -154,18 +144,9 @@ const Flex = styled.div`
     }
     @media (max-width: 768px) {
       padding: 10px 5px;
+      margin-bottom: 50px;
     }
   }
 `;
-const RowMarque = styled.div`
-  background: rgb(255, 255, 255, 0.5);
 
-  padding: 40px 80px;
-  align-items: center;
-  justify-content: space-around;
-  display: flex;
-  @media (max-width: 768px) {
-    padding: 10px 20px;
-  }
-`;
 export default Header;

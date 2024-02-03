@@ -38,7 +38,7 @@ const Header = () => {
                 </div>
               </Flex>
             </Side>
-            <Aside>
+            <Aside className="Aside">
               <img src={heroOneGirl} alt="girl in computer" />
             </Aside>
           </Main>
@@ -65,7 +65,7 @@ const MainCarrier = styled.main`
 `;
 const Main = styled.main`
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
+  grid-template-columns: 1.5fr 2fr;
   /* padding: 0 80px; */
   padding-top: 8px;
   padding-left: 120px;
@@ -84,6 +84,7 @@ const Side = styled.div`
     font-size: 50px;
     color: aliceblue;
     margin-top: 110px;
+    max-width: 450px;
     @media (max-width: 768px) {
       font-size: 30px;
       margin-top: 0;
@@ -94,13 +95,17 @@ const Side = styled.div`
   & > p {
     color: aliceblue;
     margin-top: 5px;
-    max-width: 560px;
+    max-width: 470px;
     margin-bottom: 40px;
     font-size: 13px;
     font-weight: 600;
   }
 `;
 const Aside = styled.div`
+  /* background-image: url(); /* Replace with the path to your image 
+  background-size: cover; /* You can use 'contain' if you want the image to fit within the div 
+  width: 100%; /* Set width as needed 
+  height: 300px; Set height as needed */
   img {
     width: 600px;
     @media (max-width: 768px) {

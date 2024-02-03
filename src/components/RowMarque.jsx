@@ -23,8 +23,8 @@ const RowMarque = () => {
 };
 
 const TheRow = styled.div`
-  background: rgb(255, 255, 255, 0.5);
-  padding: 40px 80px;
+  background: rgb(255, 255, 255, 0.8);
+  padding: 30px 80px;
   align-items: center;
   justify-content: space-around;
   display: flex;

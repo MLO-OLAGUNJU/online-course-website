@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import courseImg from "../images/heroImg3-b686fe52.svg";
 import { FaStar } from "react-icons/fa";
+import { FaRegClock } from "react-icons/fa6";
 
 const Courses = () => {
   return (
@@ -39,7 +40,10 @@ const Courses = () => {
               </Flex>
               <Middle>Introduction To User Research In Ux Design</Middle>
               <Flex>
-                <span>23hrs 50mins</span>
+                <span>
+                  <FaRegClock style={{ marginRight: "5px" }} />
+                  23hrs 50mins
+                </span>
                 <span>15 Lessons</span>
               </Flex>
               <Flex>
@@ -122,6 +126,8 @@ const Flex = styled.div`
     font-size: 15px;
     font-weight: 600;
     color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
   }
 `;
 const Rating = styled.div`

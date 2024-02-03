@@ -16,9 +16,7 @@ const Header = () => {
         <MainCarrier>
           <Main>
             <Side>
-              <h1>
-                Grow your skills <br /> to advance your career path
-              </h1>
+              <h1>Grow your skills to advance your career path</h1>
               <p>
                 Build Your Future With Our Quality Education. The Best And
                 Largest All-In-One Online Tutoring Platform In The World
@@ -67,12 +65,15 @@ const Wrapper = styled.div`
   flex-direction: column;
   background-color: #004db3;
   padding-top: 100px;
+  @media (max-width: 768px) {
+    padding-top: 15px;
+  }
 `;
 const MainCarrier = styled.main`
   display: flex;
   flex-direction: column;
   /* align-items: center;
-  justify-content: center; */ */
+  justify-content: center; */
 `;
 const Main = styled.main`
   display: grid;
@@ -80,6 +81,12 @@ const Main = styled.main`
   /* padding: 0 80px; */
   padding-top: 8px;
   padding-left: 120px;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    text-align: center;
+  }
 `;
 const Side = styled.div`
   display: flex;
@@ -89,6 +96,12 @@ const Side = styled.div`
     font-size: 50px;
     color: aliceblue;
     margin-top: 110px;
+    @media (max-width: 768px) {
+      font-size: 30px;
+      margin-top: 0;
+      max-width: 400px;
+      margin-bottom: 10px;
+    }
   }
   & > p {
     color: aliceblue;
@@ -102,11 +115,17 @@ const Side = styled.div`
 const Aside = styled.div`
   img {
     width: 600px;
+    @media (max-width: 768px) {
+      width: 300px;
+    }
   }
 `;
 const Flex = styled.div`
   display: flex;
   gap: 15px;
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
   & > div {
     display: flex;
     flex-direction: column;
@@ -132,6 +151,9 @@ const Flex = styled.div`
       background-color: #fff;
       color: #004db3;
       font-weight: 600;
+    }
+    @media (max-width: 768px) {
+      padding: 10px 5px;
     }
   }
 `;

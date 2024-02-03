@@ -20,9 +20,9 @@ const NavBar = () => {
           <img src={logo} alt="logo" width={130} />
           <Hamburger>
             {isOpen ? (
-              <CloseIcon onClick={toggleMenu} />
+              <CloseIcon style={{ color: "#fff" }} onClick={toggleMenu} />
             ) : (
-              <HamburgerIcon onClick={toggleMenu} />
+              <HamburgerIcon style={{ color: "#fff" }} onClick={toggleMenu} />
             )}
           </Hamburger>
           <Nav isOpen={isOpen}>
@@ -45,6 +45,9 @@ const MainWrapper = styled.div`
   align-items: center;
   justify-content: center;
   padding-top: 10px;
+  /* position: fixed; */
+  left: 0;
+  right: 0;
 `;
 
 const NavWrapper = styled.div`
@@ -70,14 +73,14 @@ const Nav = styled.ul`
     flex-direction: column;
     position: absolute;
     background-color: #004db3;
-    height: 95vh;
+    height: 50vh;
     width: 100vw;
     top: 70px;
     right: 0;
     justify-content: center;
     text-align: center;
     gap: 15px;
-    z-index: 1; /* Ensure the menu is above other elements */
+    z-index: 9000; /* Ensure the menu is above other elements */
   }
 `;
 const ListItem = styled.li`

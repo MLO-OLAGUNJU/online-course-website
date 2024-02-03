@@ -164,5 +164,8 @@ const RowMarque = styled.div`
   align-items: center;
   justify-content: space-around;
   display: flex;
+  @media (max-width: 768px) {
+    padding: 10px 20px;
+  }
 `;
 export default Header;

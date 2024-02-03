@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import courseImg from "../images/heroImg3-b686fe52.svg";
+import { FaStar } from "react-icons/fa";
 
 const Courses = () => {
   return (
@@ -29,7 +30,11 @@ const Courses = () => {
                   <span>Design</span>
                 </Niche>
                 <Rating>
-                  <span>4.7k*(32.7k+)</span>
+                  <span>
+                    4.7k
+                    <FaStar style={{ color: "gold", marginRight: "3px" }} />
+                    (32.7k+)
+                  </span>
                 </Rating>
               </Flex>
               <Middle>Introduction To User Research In Ux Design</Middle>
@@ -89,6 +94,9 @@ const CourseNavButton = styled.div`
 `;
 const CourseCardContainer = styled.div`
   display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
 `;
 const CourseCard = styled.div`
   display: flex;
@@ -121,6 +129,8 @@ const Rating = styled.div`
     font-size: 12px;
     font-weight: 600;
     color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
   }
 `;
 const Niche = styled.div`
@@ -134,7 +144,7 @@ const Niche = styled.div`
   }
 `;
 const Middle = styled.h1`
-  font-size: 23px;
+  font-size: 20px;
   margin-left: 10px;
   margin-top: 15px;
 `;

@@ -1,8 +1,20 @@
 import React from "react";
 import styled from "styled-components";
-import courseImg from "../images/heroImg3-b686fe52.svg";
 import { FaStar } from "react-icons/fa";
 import { FaRegClock } from "react-icons/fa6";
+import { PiBookOpenTextLight } from "react-icons/pi";
+import cardImage1 from "../images/coursecard1.svg";
+import cardImage2 from "../images/coursecard2.svg";
+import cardImage3 from "../images/coursecard3.svg";
+import cardImage4 from "../images/coursecard4.svg";
+import cardImage5 from "../images/coursecard5.svg";
+import cardImage6 from "../images/coursecard6.svg";
+import profile1 from "../images/cardProfileImg1.svg";
+import profile2 from "../images/cardProfileImg2.svg";
+import profile3 from "../images/cardProfileImg3.svg";
+import profile4 from "../images/cardProfileImg4.svg";
+import profile5 from "../images/cardProfileImg5.svg";
+import profile6 from "../images/cardProfileImg6.svg";
 
 const Courses = () => {
   return (
@@ -24,7 +36,7 @@ const Courses = () => {
         </CourseNavButton>
         <CourseCardContainer>
           <CourseCard>
-            <img src={courseImg} alt="" width={335} height={223} />
+            <img src={cardImage1} alt="" width={335} height={223} />
             <CardFooter>
               <Flex>
                 <Niche>
@@ -44,17 +56,200 @@ const Courses = () => {
                   <FaRegClock style={{ marginRight: "5px" }} />
                   23hrs 50mins
                 </span>
-                <span>15 Lessons</span>
+                <span>
+                  <PiBookOpenTextLight style={{ marginRight: "5px" }} />
+                  15 Lessons
+                </span>
               </Flex>
               <Flex>
                 <Profile>
-                  <img src={courseImg} alt="" />
-                  <span>John Doe</span>
+                  <img src={profile1} alt="" />
+                  <span>Leonard Victor</span>
                 </Profile>
+                <span style={{ color: "#004DB3" }}>$15.00</span>
+              </Flex>
+            </CardFooter>
+          </CourseCard>
+          <CourseCard>
+            <img src={cardImage2} alt="" width={335} height={223} />
+            <CardFooter>
+              <Flex>
+                <Niche>
+                  <span>Marketing</span>
+                </Niche>
+                <Rating>
+                  <span>
+                    4.7k
+                    <FaStar style={{ color: "gold", marginRight: "3px" }} />
+                    (8.7k+)
+                  </span>
+                </Rating>
+              </Flex>
+              <Middle>Introduction To New Marketing Audience</Middle>
+              <Flex>
+                <span>
+                  <FaRegClock style={{ marginRight: "5px" }} />
+                  22hrs 30mins
+                </span>
+                <span>
+                  <PiBookOpenTextLight style={{ marginRight: "5px" }} />
+                  22 Lessons
+                </span>
+              </Flex>
+              <Flex>
+                <Profile>
+                  <img src={profile2} alt="" />
+                  <span>Jeffrey Williams</span>
+                </Profile>
+                <span style={{ color: "#004DB3" }}>$32.00</span>
+              </Flex>
+            </CardFooter>
+          </CourseCard>
+          <CourseCard>
+            <img src={cardImage3} alt="" width={335} height={223} />
+            <CardFooter>
+              <Flex>
+                <Niche>
+                  <span>Web Development</span>
+                </Niche>
+                <Rating>
+                  <span>
+                    4.7k
+                    <FaStar style={{ color: "gold", marginRight: "3px" }} />
+                    (12.7k+)
+                  </span>
+                </Rating>
+              </Flex>
+              <Middle>Introduction To Html, Css & Bootstrap</Middle>
+              <Flex>
+                <span>
+                  <FaRegClock style={{ marginRight: "5px" }} />
+                  45hrs 50mins
+                </span>
+                <span>
+                  <PiBookOpenTextLight style={{ marginRight: "5px" }} />
+                  55 Lessons
+                </span>
+              </Flex>
+              <Flex>
+                <Profile>
+                  <img src={profile3} alt="" />
+                  <span>Claretta Mason</span>
+                </Profile>
+                <span style={{ color: "#004DB3" }}>$55.00</span>
+              </Flex>
+            </CardFooter>
+          </CourseCard>
+          {/* </CourseCardContainer> */}
+          {/* <CourseCardContainer> */}
+          <CourseCard>
+            <img src={cardImage4} alt="" width={335} height={223} />
+            <CardFooter>
+              <Flex>
+                <Niche>
+                  <span>Web Development</span>
+                </Niche>
+                <Rating>
+                  <span>
+                    4.7k
+                    <FaStar style={{ color: "gold", marginRight: "3px" }} />
+                    (32.7k+)
+                  </span>
+                </Rating>
+              </Flex>
+              <Middle>Introduction To Javascript, Git & GitHub</Middle>
+              <Flex>
+                <span>
+                  <FaRegClock style={{ marginRight: "5px" }} />
+                  30hrs 50mins
+                </span>
+                <span>
+                  <PiBookOpenTextLight style={{ marginRight: "5px" }} />
+                  22 Lessons
+                </span>
+              </Flex>
+              <Flex>
+                <Profile>
+                  <img src={profile4} alt="" />
+                  <span>Jessica Duke</span>
+                </Profile>
+                <span style={{ color: "#004DB3" }}>$45.00</span>
+              </Flex>
+            </CardFooter>
+          </CourseCard>
+          <CourseCard>
+            <img src={cardImage5} alt="" width={335} height={223} />
+            <CardFooter>
+              <Flex>
+                <Niche>
+                  <span>Marketing</span>
+                </Niche>
+                <Rating>
+                  <span>
+                    4.7k
+                    <FaStar style={{ color: "gold", marginRight: "3px" }} />
+                    (15.7k+)
+                  </span>
+                </Rating>
+              </Flex>
+              <Middle>Introduction To Live Marketing Analysis</Middle>
+              <Flex>
+                <span>
+                  <FaRegClock style={{ marginRight: "5px" }} />
+                  10hrs 50mins
+                </span>
+                <span>
+                  <PiBookOpenTextLight style={{ marginRight: "5px" }} />
+                  32 Lessons
+                </span>
+              </Flex>
+              <Flex>
+                <Profile>
+                  <img src={profile6} alt="" />
+                  <span>Adam Smith</span>
+                </Profile>
+                <span style={{ color: "#004DB3" }}>$25.00</span>
+              </Flex>
+            </CardFooter>
+          </CourseCard>
+          <CourseCard>
+            <img src={cardImage6} alt="" width={335} height={223} />
+            <CardFooter>
+              <Flex>
+                <Niche>
+                  <span>Marketing</span>
+                </Niche>
+                <Rating>
+                  <span>
+                    4.7k
+                    <FaStar style={{ color: "gold", marginRight: "3px" }} />
+                    (4.7k+)
+                  </span>
+                </Rating>
+              </Flex>
+              <Middle>Introduction To Outroom Marketing Analysis</Middle>
+              <Flex>
+                <span>
+                  <FaRegClock style={{ marginRight: "5px" }} />
+                  33hrs 50mins
+                </span>
+                <span>
+                  <PiBookOpenTextLight style={{ marginRight: "5px" }} />
+                  26 Lessons
+                </span>
+              </Flex>
+              <Flex>
+                <Profile>
+                  <img src={profile5} alt="" />
+                  <span>Jacobs Samuel</span>
+                </Profile>
+                <span style={{ color: "#004DB3" }}>$25.00</span>
               </Flex>
             </CardFooter>
           </CourseCard>
         </CourseCardContainer>
+
+        <ViewAllCourses>View All Courses</ViewAllCourses>
       </CourseBlock>
     </>
   );
@@ -63,6 +258,7 @@ const Courses = () => {
 const CourseBlock = styled.div`
   display: flex;
   flex-direction: column;
+  padding-bottom: 100px;
 `;
 const CourseHeader = styled.div`
   text-align: center;
@@ -74,6 +270,9 @@ const CourseHeader = styled.div`
   p {
     margin-top: 20px;
     max-width: 630px;
+    @media (max-width: 768px) {
+      max-width: 370px;
+    }
   }
 `;
 
@@ -84,6 +283,12 @@ const CourseNavButton = styled.div`
   align-items: center;
   justify-content: center;
   gap: 30px;
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+    max-width: 420px;
+    margin: auto auto;
+    gap: 10px;
+  }
   button {
     all: unset;
     font-weight: 600;
@@ -94,13 +299,20 @@ const CourseNavButton = styled.div`
       background-color: #fff;
       color: #004db3;
     }
+    @media (max-width: 768px) {
+      font-size: 12px;
+      padding: 5px;
+    }
   }
 `;
 const CourseCardContainer = styled.div`
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
-  padding-bottom: 30px;
+  padding-bottom: 80px;
+  cursor: pointer;
+  gap: 20px;
 `;
 const CourseCard = styled.div`
   display: flex;
@@ -143,6 +355,7 @@ const Niche = styled.div`
   background-color: #d2dff5;
   border-radius: 20px;
   padding: 5px 15px;
+
   span {
     font-size: 12px;
     color: #004db3;
@@ -153,16 +366,36 @@ const Middle = styled.h1`
   font-size: 20px;
   margin-left: 10px;
   margin-top: 15px;
+  margin-bottom: 10px;
+
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 const Profile = styled.div`
-  margin-top: 15px;
+  margin-top: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
+  &:hover {
+    text-decoration: underline;
+  }
+  span {
+    color: black;
+  }
   img {
     width: 30px;
     height: 30px;
     border-radius: 100%;
   }
+`;
+const ViewAllCourses = styled.button`
+  all: unset;
+  margin: auto auto;
+  background-color: #004db3;
+  color: aliceblue;
+  padding: 20px;
+  border-radius: 8px;
+  cursor: pointer;
 `;
 export default Courses;

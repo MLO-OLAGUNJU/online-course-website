@@ -50,6 +50,7 @@ const Header = () => {
 
 const Wrapper = styled.div`
   display: flex;
+  position: relative;
   flex-direction: column;
   background-color: #004db3;
   padding-top: 100px;

@@ -28,6 +28,7 @@ const TheRow = styled.div`
   align-items: center;
   justify-content: space-around;
   display: flex;
+
   @media (max-width: 768px) {
     padding: 10px 20px;
     img {
@@ -37,6 +38,13 @@ const TheRow = styled.div`
 `;
 const Wrappper = styled.div`
   background-color: #004db3;
+  position: absolute;
+  top: 790px;
+  left: 0;
+  right: 0;
+  @media (max-width: 768px) {
+    top: 865px;
+  }
 `;
 
 export default RowMarque;

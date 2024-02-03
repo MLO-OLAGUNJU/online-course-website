@@ -53,14 +53,15 @@ const Main = () => {
 
 const CourseHighlight = styled.div`
   display: flex;
+  padding-top: 200px;
   justify-content: space-between;
   align-items: center;
   max-width: 85%;
   margin: auto auto;
-  padding-top: 70px;
   background-color: aliceblue;
   @media (max-width: 768px) {
     display: block;
+    padding-top: 70px;
   }
   div {
     &:nth-child(1) {

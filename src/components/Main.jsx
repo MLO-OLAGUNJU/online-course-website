@@ -134,11 +134,22 @@ const CourseHighlight = styled.div`
       position: relative;
       img {
         width: 100%;
+
+        &:nth-child(1) {
+          @media (max-width: 768px) {
+            width: 50%;
+          }
+        }
         &:nth-child(2) {
           width: 140px;
           position: absolute;
           right: 350px;
           top: 160px;
+          @media (max-width: 768px) {
+            top: 80px;
+            right: 510px;
+            width: 100px;
+          }
         }
       }
     }

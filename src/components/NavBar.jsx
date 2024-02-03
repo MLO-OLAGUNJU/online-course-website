@@ -47,6 +47,11 @@ const MainWrapper = styled.div`
   padding-top: 10px;
   left: 0;
   right: 0;
+  position: fixed;
+  z-index: 0;
+  @media (max-width: 768px) {
+    position: unset;
+  }
 `;
 
 const NavWrapper = styled.div`
@@ -56,8 +61,10 @@ const NavWrapper = styled.div`
   align-items: center;
   padding: 10px 0;
   width: 85%;
+
   @media (max-width: 768px) {
     padding-top: 20px;
+    /* position: fixed; */
   }
 `;
 const Nav = styled.ul`
@@ -65,24 +72,20 @@ const Nav = styled.ul`
   align-items: center;
   justify-content: space-between;
   gap: 40px;
-  position: fixed;
-
-  transition: opacity 0.3s ease, height 0.3s ease; /* Add smooth transition effect */
 
   @media (max-width: 768px) {
     display: ${({ isOpen }) => (isOpen ? "flex" : "none")};
     flex-direction: column;
     position: absolute;
     background-color: #004db3;
-    height: 100%;
-    width: 100%;
-    top: 84px;
+    top: 90px;
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
     right: 0;
     justify-content: center;
     text-align: center;
-    overflow-y: hidden;
     gap: 15px;
-    z-index: 9000; /* Ensure the menu is above other elements */
   }
 `;
 const ListItem = styled.li`

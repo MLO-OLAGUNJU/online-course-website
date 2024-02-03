@@ -55,6 +55,7 @@ const Wrapper = styled.div`
   padding-top: 100px;
   @media (max-width: 768px) {
     padding-top: 15px;
+    /* margin-top: 80px; */
   }
 `;
 const MainCarrier = styled.main`

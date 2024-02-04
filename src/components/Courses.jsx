@@ -618,6 +618,7 @@ const Profile = styled.div`
   margin-top: 10px;
   display: flex;
   align-items: center;
+  gap: 10px;
   justify-content: center;
   &:hover {
     text-decoration: underline;

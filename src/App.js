@@ -7,6 +7,8 @@ import AfterMain from "./components/AfterMain";
 import Courses from "./components/Courses";
 import TestimonialHeader from "./components/TestimonialHeader";
 import TestimnonialBody from "./components/TestimnonialBody";
+import Community from "./components/Community";
+import FAQS from "./components/FAQS.jsx";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
       <Courses />
       <TestimonialHeader />
       <TestimnonialBody />
+      <Community />
+      <FAQS />
     </div>
   );
 }

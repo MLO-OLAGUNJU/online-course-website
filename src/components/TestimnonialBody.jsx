@@ -57,7 +57,7 @@ const TestimnonialBody = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true, // Enable autoplay
+    autoplay: true,
     autoplaySpeed: 3000,
   };
 
@@ -95,7 +95,7 @@ const Wrapper = styled.div`
   }
 `;
 const Testimonial = styled.div`
-  padding: 50px 110px;
+  padding: 10px 110px;
   padding-top: 70px;
   background-color: #fff;
   border-radius: 8px;

@@ -24,7 +24,7 @@ const Header = styled.div`
   flex-direction: column;
   p {
     width: 700px;
-    margin-top: 40px;
+    margin-top: 15px;
     @media (max-width: 768px) {
       max-width: 330px;
     }

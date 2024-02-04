@@ -95,7 +95,7 @@ const Wrapper = styled.div`
   }
 `;
 const Testimonial = styled.div`
-  padding: 50px 150px;
+  padding: 50px 110px;
   padding-top: 70px;
   background-color: #fff;
   border-radius: 8px;
@@ -103,6 +103,7 @@ const Testimonial = styled.div`
     padding: 30px;
   }
   p {
+    margin-bottom: 40px;
     @media (max-width: 768px) {
       font-size: 13px;
     }

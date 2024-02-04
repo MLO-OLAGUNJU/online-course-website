@@ -26,7 +26,7 @@ const Header = styled.div`
     width: 700px;
     margin-top: 15px;
     @media (max-width: 768px) {
-      max-width: 330px;
+      /* max-width: 330px; */
     }
   }
 `;

@@ -87,6 +87,9 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   padding: 100px;
+  @media (max-width: 768px) {
+    padding: 10px;
+  }
 `;
 const Heading = styled.div`
   display: flex;
@@ -94,9 +97,16 @@ const Heading = styled.div`
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  h1 {
+  }
   p {
     width: 55%;
     font-size: 13px;
+    margin-top: 20px;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
   }
 `;
 const Wrapper = styled.div`
@@ -106,6 +116,9 @@ const Wrapper = styled.div`
   width: 85%;
   margin: auto auto;
   padding: 40px;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const FAQItem = styled.div`

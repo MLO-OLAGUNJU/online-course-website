@@ -9,7 +9,7 @@ const TestimonialHeader = () => {
         <p>
           High-Defination Video Is Video Of Higher Resolution And Quality Than
           Standard Definition. While There’s No Standard Meaning For High
-          Definition, Generally Any Standard Video Image
+          {/* Definition, Generally Any Standard Video Image */}
         </p>
       </Header>
     </>

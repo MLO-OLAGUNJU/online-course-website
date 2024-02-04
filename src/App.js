@@ -5,6 +5,8 @@ import RowMarque from "./components/RowMarque";
 import Main from "./components/Main";
 import AfterMain from "./components/AfterMain";
 import Courses from "./components/Courses";
+import TestimonialHeader from "./components/TestimonialHeader";
+import TestimnonialBody from "./components/TestimnonialBody";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
       <Main />
       <AfterMain />
       <Courses />
+      <TestimonialHeader />
+      <TestimnonialBody />
     </div>
   );
 }

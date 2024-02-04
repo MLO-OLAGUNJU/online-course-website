@@ -16,7 +16,7 @@ const TestimonialHeader = () => {
   );
 };
 const Header = styled.div`
-  /* border-color: #004db3; */
+  border-color: #004db3;
   text-align: center;
   display: flex;
   align-items: center;

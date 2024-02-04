@@ -18,7 +18,7 @@ const TestimonialHeader = () => {
 const Header = styled.div`
   border-color: #004db3;
   text-align: center;
-  display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: center;
   flex-direction: column;

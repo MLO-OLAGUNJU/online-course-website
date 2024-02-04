@@ -39,16 +39,16 @@ const TestimnonialBody = () => {
       message:
         "High-Defination Video Is Video Of Higher Resolution And Quality Than Standard Definition. High-Defination Video Is Video Of Higher Resolution And Quality Than Standard Definition. Hbuild Your Future With Our Quality Education. The Best And Largest All-In-One Online Tutoring Platform In The Worldd Definition. High-Defination Video Is Video Of Higher Resolution And Quality Than Standard Definition. Build Your Future With Our Quality Education. The Best And Largest All-In-One Online Tutoring Platform In The World",
     },
-    {
+    /* {
       id: 4,
       person: {
-        image: carousel3,
-        name: "Warner Jude",
+        image: carousel4,
+        name: "Banny Evelyn",
         title: "Web Developer",
       },
       message:
         "High-Defination Video Is Video Of Higher Resolution And Quality Than Standard Definition. High-Defination Video Is Video Of Higher Resolution And Quality Than Standard Definition. Hbuild Your Future With Our Quality Education. The Best And Largest All-In-One Online Tutoring Platform In The Worldd Definition. High-Defination Video Is Video Of Higher Resolution And Quality Than Standard Definition. Build Your Future With Our Quality Education. The Best And Largest All-In-One Online Tutoring Platform In The World",
-    },
+    }, */
   ];
 
   const settings = {
@@ -92,7 +92,7 @@ const Wrapper = styled.div`
   gap: 30px;
   .slick-slider {
     margin-top: 0;
-    /* overflow: hidden; */
+    overflow: hidden;
   }
 `;
 const Testimonial = styled.div`

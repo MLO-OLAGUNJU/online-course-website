@@ -2,15 +2,12 @@ import React, { useState } from "react";
 import styled from "styled-components";
 
 const FAQ = () => {
-  // Initialize state to track visibility of each FAQ item
-  const [faqVisibility, setFaqVisibility] = useState({});
+  // Initialize state to track the currently open FAQ item
+  const [openFAQ, setOpenFAQ] = useState(null);
 
-  // Function to toggle visibility
-  const toggleVisibility = (id) => {
-    setFaqVisibility((prevState) => ({
-      ...prevState,
-      [id]: !prevState[id],
-    }));
+  // Function to toggle open/close state
+  const toggleFAQ = (id) => {
+    setOpenFAQ((prevOpenFAQ) => (prevOpenFAQ === id ? null : id));
   };
 
   // Sample FAQ data
@@ -69,13 +66,16 @@ const FAQ = () => {
           {faqData.map((faq) => (
             <FAQItem key={faq.id}>
               <Flex>
-                <Question onClick={() => toggleVisibility(faq.id)}>
+                <Question
+                  onClick={() => toggleFAQ(faq.id)}
+                  active={openFAQ === faq.id}
+                >
                   {faq.question}
                 </Question>
                 <span>+</span>
               </Flex>
-              {/* Conditionally render answer based on visibility state */}
-              {faqVisibility[faq.id] && <Answer>{faq.answer}</Answer>}
+              {/* Conditionally render answer based on open state */}
+              {openFAQ === faq.id && <Answer>{faq.answer}</Answer>}
             </FAQItem>
           ))}
         </Wrapper>
@@ -115,6 +115,7 @@ const FAQItem = styled.div`
 const Question = styled.div`
   font-weight: 600;
   cursor: pointer;
+  color: ${(props) => (props.active ? "#004db3" : "inherit")};
 `;
 
 const Answer = styled.div`

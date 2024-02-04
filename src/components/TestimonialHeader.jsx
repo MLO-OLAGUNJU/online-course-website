@@ -20,7 +20,7 @@ const Header = styled.div`
   text-align: center;
   display: flex;
   align-items: center;
-  /* justify-content: center; */
+  justify-content: center;
   flex-direction: column;
   p {
     width: 700px;

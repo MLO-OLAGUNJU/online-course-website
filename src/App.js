@@ -9,6 +9,7 @@ import TestimonialHeader from "./components/TestimonialHeader";
 import TestimnonialBody from "./components/TestimnonialBody";
 import Community from "./components/Community";
 import FAQS from "./components/FAQS.jsx";
+import Footer from "./components/Footer.jsx";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <TestimnonialBody />
       <Community />
       <FAQS />
+      <Footer />
     </div>
   );
 }

@@ -56,6 +56,7 @@ const Image = styled.div`
     width: 135%;
     margin: 0;
     margin-top: 15px;
+    margin-right: 15px;
   }
   img {
     width: 100%;
@@ -70,5 +71,8 @@ const Button = styled.button`
   border-radius: 8px;
   margin-top: 30px;
   cursor: pointer;
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
 `;
 export default Community;

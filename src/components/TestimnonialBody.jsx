@@ -91,7 +91,8 @@ const Wrapper = styled.div`
   padding-bottom: 40px;
   gap: 30px;
   .slick-slider {
-    overflow: hidden;
+    margin-top: 0;
+    /* overflow: hidden; */
   }
 `;
 const Testimonial = styled.div`
@@ -111,7 +112,7 @@ const Testimonial = styled.div`
 `;
 const Flex = styled.div`
   display: flex;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   align-items: center;
   justify-content: center;
   gap: 10px;

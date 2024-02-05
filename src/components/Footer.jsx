@@ -50,8 +50,8 @@ const Footer = () => {
           <Three>
             <h1>Subscribe Us</h1>
             <Form>
-              <input type="text" placeholder="mlo@gmail.com" />
-              <button>Send Message</button>
+              <input type="email" placeholder="mlo@gmail.com" />
+              <button type="submit">Send Message</button>
             </Form>
           </Three>
         </FooterWrapper>
@@ -165,6 +165,9 @@ const Form = styled.form`
     font-size: 12px;
     height: 50px;
     cursor: pointer;
+    &:hover {
+      color: #fff;
+    }
     @media (max-width: 768px) {
       width: 100px;
       height: 50px;
@@ -177,7 +180,6 @@ const Foot = styled.p`
   color: #fff;
   font-size: 15px;
   &:hover {
-    cursor: pointer;
     text-decoration: underline;
   }
 `;

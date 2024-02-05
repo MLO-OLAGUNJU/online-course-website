@@ -5,7 +5,7 @@ import communityImage from "../images/community-2dc5b38e.svg";
 const Community = () => {
   return (
     <>
-      <Wrapper>
+      <Wrapper id="community">
         <Header>
           <p>Join Our Community</p>
           <h1>

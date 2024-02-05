@@ -26,12 +26,12 @@ const NavBar = () => {
             )}
           </Hamburger>
           <Nav isOpen={isOpen}>
-            <ListItem>Home</ListItem>
-            <ListItem>About Us</ListItem>
-            <ListItem>Courses</ListItem>
-            <ListItem>Testimonial</ListItem>
-            <ListItem>Community</ListItem>
-            <ListItem>Enroll Now</ListItem>
+            <ListItem href="/">Home</ListItem>
+            <ListItem href="#about">About Us</ListItem>
+            <ListItem href="#courses">Courses</ListItem>
+            <ListItem href="#testimonial">Testimonial</ListItem>
+            <ListItem href="#community">Community</ListItem>
+            <ListItem href="#">Enroll Now</ListItem>
           </Nav>
         </NavWrapper>
       </MainWrapper>
@@ -88,7 +88,7 @@ const Nav = styled.ul`
     gap: 15px;
   }
 `;
-const ListItem = styled.li`
+const ListItem = styled.a`
   list-style-type: none;
   color: wheat;
   cursor: pointer;

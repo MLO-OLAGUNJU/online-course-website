@@ -65,15 +65,13 @@ const FAQ = () => {
         <Wrapper>
           {faqData.map((faq) => (
             <FAQItem key={faq.id}>
-              <Flex>
-                <Question
-                  onClick={() => toggleFAQ(faq.id)}
-                  active={openFAQ === faq.id}
-                >
-                  {faq.question}
-                </Question>
+              <Question
+                onClick={() => toggleFAQ(faq.id)}
+                active={openFAQ === faq.id}
+              >
+                {faq.question}
                 <span>+</span>
-              </Flex>
+              </Question>
               {/* Conditionally render answer based on open state */}
               {openFAQ === faq.id && <Answer>{faq.answer}</Answer>}
             </FAQItem>
@@ -129,17 +127,15 @@ const Question = styled.div`
   font-weight: 600;
   cursor: pointer;
   color: ${(props) => (props.active ? "#004db3" : "inherit")};
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 `;
 
 const Answer = styled.div`
   margin-top: 10px;
   color: rgba(0, 0, 0, 0.5);
-`;
-const Flex = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 `;
 
 export default FAQ;

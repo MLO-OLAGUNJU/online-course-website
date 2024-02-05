@@ -10,7 +10,7 @@ import frame4 from "../images/frame4-4afbedb5.svg";
 const Main = () => {
   return (
     <>
-      <CourseHighlight>
+      <CourseHighlight id="about">
         <div>
           <h1>High quality video, audio & live classes</h1>
           <p>

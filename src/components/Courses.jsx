@@ -346,7 +346,7 @@ const courseData = [
 const Courses = () => {
   return (
     <>
-      <CourseBlock>
+      <CourseBlock id="courses">
         <CourseHeader>
           <h1>Browse Our Popular Courses</h1>
           <p>

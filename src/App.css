@@ -22,3 +22,7 @@ h1 {
 width: 100%; /* Set width as needed 
   background-repeat: no-repeat;
   /* height: 300px; Set height as needed */
+
+a {
+  text-decoration: none;
+}
